@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-budget-governor"
+version = "0.1.0"
+description = "Zero-Cloud FinOps Governor, Hierarchical Token/USD Limiter, Economic Circuit Breaker & SHA-256 Spend Ledger for AI Agents & MCP"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Benni Alencar", email = "bennialencar@benni-os.net" }
+]
+keywords = [
+  "ai-finops",
+  "budget-governor",
+  "circuit-breaker",
+  "cost-control",
+  "token-limiter",
+  "mcp",
+  "ai-agents",
+  "benni-os"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Office/Business :: Financial",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5.0",
+]
+
+[project.scripts]
+budget-governor = "agent_budget_governor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Benni-OS/agent-budget-governor"
+Repository = "https://github.com/Benni-OS/agent-budget-governor"
+Issues = "https://github.com/Benni-OS/agent-budget-governor/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["agent_budget_governor*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008", "E501"]
