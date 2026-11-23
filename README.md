@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:0F172A,100:0D0D0D&height=180&section=header&text=agent-budget-governor&fontSize=42&fontColor=F8FAFC&animation=fadeIn&fontAlignY=38&desc=Zero-Cloud%20FinOps%20Governor,%20Economic%20Circuit%20Breaker%20%26%20SHA-256%20Spend%20Ledger%20for%20AI%20Agents&descSize=16&descAlignY=62" width="100%"/>
+<img src="assets/banner_header.png" width="100%"/>
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Dependencies](https://img.shields.io/badge/Runtime_Deps-Zero_(Stdlib)-F59E0B?style=for-the-badge)](pyproject.toml)
@@ -283,7 +283,7 @@ Need autonomous multi-agent swarm orchestration, private datacenter infrastructu
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:0F172A,100:0D0D0D&height=120&section=footer" width="100%"/>
+<img src="assets/banner_footer.png" width="100%"/>
 
 **agent-budget-governor** — *Zero-Cloud FinOps Governor, Economic Circuit Breaker & SHA-256 Spend Ledger* • [benni-os.net](https://benni-os.net) • `MIT License`
 
